@@ -1,8 +1,8 @@
 module Link = {
   external link : ReasonReact.reactClass = "default" [@@bs.module "next/link"];
   let make
-      href::(href: option string)=?
-      as::(_as: option string)=?
+      ::href=?
+      ::_as=?
       prefetch::(prefetch: option bool)=?
       replace::(replace: option bool)=?
       shallow::(shallow: option bool)=?
