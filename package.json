@@ -1,0 +1,32 @@
+{
+  "name": "bs-next",
+  "version": "1.0.0",
+  "description": "BuckleScript bindings for next.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "bsb -make-world -clean-world",
+    "watch": "bsb -make-world -clean-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulrikstrid/bs-next.git"
+  },
+  "keywords": [
+    "next.js",
+    "BuckleScript",
+    "Reason"
+  ],
+  "author": "Ulrik Strid (ulrik.strid@outlook.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulrikstrid/bs-next/issues"
+  },
+  "homepage": "https://github.com/ulrikstrid/bs-next#readme",
+  "devDependencies": {
+    "bs-platform": "^1.9.1"
+  },
+  "dependencies": {
+    "next": "^3.0.6",
+    "reason-react": "^0.2.3"
+  }
+}
