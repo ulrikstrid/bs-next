@@ -3,10 +3,10 @@ module Link: {
   let make:
     href::'a? =>
     _as::'b? =>
-    prefetch::bool? =>
-    replace::bool? =>
-    shallow::bool? =>
-    passHref::bool? =>
+    prefetch::Js.boolean? =>
+    replace::Js.boolean? =>
+    shallow::Js.boolean? =>
+    passHref::Js.boolean? =>
     array ReasonReact.reactElement =>
     ReasonReact.component ReasonReact.stateless ReasonReact.noRetainedProps;
 };
