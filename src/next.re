@@ -3,10 +3,10 @@ module Link = {
   let make
       ::href=?
       ::_as=?
-      prefetch::(prefetch: option bool)=?
-      replace::(replace: option bool)=?
-      shallow::(shallow: option bool)=?
-      passHref::(passHref: option bool)=?
+      prefetch::(prefetch: option Js.boolean)=?
+      replace::(replace: option Js.boolean)=?
+      shallow::(shallow: option Js.boolean)=?
+      passHref::(passHref: option Js.boolean)=?
       children =>
     ReasonReact.wrapJsForReason
       reactClass::link
