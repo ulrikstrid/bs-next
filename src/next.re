@@ -1,31 +1,38 @@
 module Link = {
-  external link : ReasonReact.reactClass = "default" [@@bs.module "next/link"];
-  let make
-      ::href=?
-      ::_as=?
-      prefetch::(prefetch: option Js.boolean)=?
-      replace::(replace: option Js.boolean)=?
-      shallow::(shallow: option Js.boolean)=?
-      passHref::(passHref: option Js.boolean)=?
-      children =>
-    ReasonReact.wrapJsForReason
-      reactClass::link
-      props::
+  [@bs.module "next/link"] external link : ReasonReact.reactClass = "default";
+  let make =
+      (
+        ~href=?,
+        ~_as=?,
+        ~prefetch: option(Js.boolean)=?,
+        ~replace: option(Js.boolean)=?,
+        ~shallow: option(Js.boolean)=?,
+        ~passHref: option(Js.boolean)=?,
+        children
+      ) =>
+    ReasonReact.wrapJsForReason(
+      reactClass = link,
+      props =
         Js.Undefined.(
           {
-            "href": from_opt href,
-            "as": from_opt _as,
-            "prefetch": from_opt prefetch,
-            "replace": from_opt replace,
-            "shallow": from_opt shallow,
-            "passHref": from_opt passHref
+            "href": from_opt(href),
+            "as": from_opt(_as),
+            "prefetch": from_opt(prefetch),
+            "replace": from_opt(replace),
+            "shallow": from_opt(shallow),
+            "passHref": from_opt(passHref)
           }
-        )
-      children;
+        ),
+      children
+    );
 };
 
 module Head = {
-  external head : ReasonReact.reactClass = "default" [@@bs.module "next/head"];
-  let make children =>
-    ReasonReact.wrapJsForReason reactClass::head props::(Js.Obj.empty ()) children;
+  [@bs.module "next/head"] external head : ReasonReact.reactClass = "default";
+  let make = (_children) =>
+    ReasonReact.wrapJsForReason(
+      reactClass = head,
+      props = Js.Obj.empty(),
+      children
+    );
 };
