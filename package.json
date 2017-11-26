@@ -1,7 +1,7 @@
 {
   "name": "bs-next",
   "version": "1.1.0",
-  "description": "BuckleScript bindings for next.js",
+  "description": "Reason bindings for Next.js",
   "main": "index.js",
   "scripts": {
     "build": "bsb -make-world",
@@ -14,8 +14,9 @@
     "url": "git+https://github.com/ulrikstrid/bs-next.git"
   },
   "keywords": [
-    "next.js",
+    "Next.js",
     "BuckleScript",
+    "ReasonReact",
     "Reason"
   ],
   "author": "Ulrik Strid (ulrik.strid@outlook.com)",
