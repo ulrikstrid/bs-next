@@ -11,8 +11,8 @@ module Link = {
         children
       ) =>
     ReasonReact.wrapJsForReason(
-      reactClass = link,
-      props =
+      ~reactClass=link,
+      ~props=
         Js.Undefined.(
           {
             "href": from_opt(href),
@@ -31,8 +31,8 @@ module Head = {
   [@bs.module "next/head"] external head : ReasonReact.reactClass = "default";
   let make = (_children) =>
     ReasonReact.wrapJsForReason(
-      reactClass = head,
-      props = Js.Obj.empty(),
-      children
+      ~reactClass=head,
+      ~props=Js.Obj.empty(),
+      _children
     );
 };

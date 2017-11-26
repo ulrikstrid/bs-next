@@ -1,7 +1,9 @@
-lib
-node_modules
-.merlin
-npm-debug.log
-bundledOutputs/
-lib/
+*.log
 .DS_Store
+.bsb.lock
+.merlin
+/lib/bs/
+/lib/ocaml/
+bundledOutputs/
+finalOutput/*.js
+node_modules
