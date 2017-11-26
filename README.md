@@ -1,6 +1,6 @@
 # bs-next
 
-[BuckleScript](https://github.com/bucklescript/bucklescript) bindings for
+[Reason](https://reasonml.github.io) bindings for
 [Next.js](https://github.com/zeit/next.js) 4.
 
 ## API
