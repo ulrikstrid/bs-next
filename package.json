@@ -14,10 +14,12 @@
     "url": "git+https://github.com/ulrikstrid/bs-next.git"
   },
   "keywords": [
-    "Next.js",
-    "BuckleScript",
-    "ReasonReact",
-    "Reason"
+    "next",
+    "next.js",
+    "reasonreact",
+    "reason",
+    "reasonml",
+    "bucklescript"
   ],
   "author": "Ulrik Strid (ulrik.strid@outlook.com)",
   "license": "MIT",
