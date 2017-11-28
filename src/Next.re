@@ -29,10 +29,10 @@ module Link = {
 
 module Head = {
   [@bs.module "next/head"] external head : ReasonReact.reactClass = "default";
-  let make = (_children) =>
+  let make = (children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=head,
       ~props=Js.Obj.empty(),
-      _children
+      children
     );
 };
