@@ -1,20 +1,25 @@
 {
   "name": "bs-next",
   "version": "1.1.0",
-  "description": "BuckleScript bindings for next.js",
+  "description": "Reason bindings for Next.js",
   "main": "index.js",
   "scripts": {
-    "build": "bsb -make-world -clean-world",
-    "watch": "bsb -make-world -clean-world -w"
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ulrikstrid/bs-next.git"
   },
   "keywords": [
+    "next",
     "next.js",
-    "BuckleScript",
-    "Reason"
+    "reasonreact",
+    "reason",
+    "reasonml",
+    "bucklescript"
   ],
   "author": "Ulrik Strid (ulrik.strid@outlook.com)",
   "license": "MIT",
@@ -23,10 +28,10 @@
   },
   "homepage": "https://github.com/ulrikstrid/bs-next#readme",
   "devDependencies": {
-    "bs-platform": "^1.9.1"
+    "bs-platform": "^2.1.0"
   },
   "dependencies": {
-    "next": "^3.0.6",
-    "reason-react": "^0.2.3"
+    "next": "^4.1.4",
+    "reason-react": "^0.3.0"
   }
 }
