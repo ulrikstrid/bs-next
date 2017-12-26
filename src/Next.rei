@@ -27,3 +27,15 @@ module Head: {
       ReasonReact.actionless,
     );
 };
+
+module Error: {
+  [@bs.module "next/error"]
+  external error : ReasonReact.reactClass = "default";
+  let make:
+    (~statusCode: int, array(ReasonReact.reactElement)) =>
+    ReasonReact.component(
+      ReasonReact.stateless,
+      ReasonReact.noRetainedProps,
+      ReasonReact.actionless
+    );
+};
