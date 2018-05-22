@@ -4,16 +4,16 @@ module Link: {
     (
       ~href: 'a=?,
       ~_as: 'b=?,
-      ~prefetch: Js.boolean=?,
-      ~replace: Js.boolean=?,
-      ~shallow: Js.boolean=?,
-      ~passHref: Js.boolean=?,
+      ~prefetch: bool=?,
+      ~replace: bool=?,
+      ~shallow: bool=?,
+      ~passHref: bool=?,
       array(ReasonReact.reactElement)
     ) =>
     ReasonReact.component(
       ReasonReact.stateless,
       ReasonReact.noRetainedProps,
-      ReasonReact.actionless
+      ReasonReact.actionless,
     );
 };
 
@@ -24,6 +24,6 @@ module Head: {
     ReasonReact.component(
       ReasonReact.stateless,
       ReasonReact.noRetainedProps,
-      ReasonReact.actionless
+      ReasonReact.actionless,
     );
 };
