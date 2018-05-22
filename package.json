@@ -1,6 +1,6 @@
 {
   "name": "bs-next",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Reason bindings for Next.js",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ulrikstrid/bs-next.git"
   },
-  "keywords": [
-    "next",
-    "next.js",
-    "reasonreact",
-    "reason",
-    "reasonml",
-    "bucklescript"
-  ],
+  "keywords": ["next", "next.js", "reasonreact", "reason", "reasonml", "bucklescript"],
   "author": "Ulrik Strid (ulrik.strid@outlook.com)",
   "license": "MIT",
   "bugs": {
@@ -28,10 +21,10 @@
   },
   "homepage": "https://github.com/ulrikstrid/bs-next#readme",
   "devDependencies": {
-    "bs-platform": "^2.1.0"
+    "bs-platform": "^3.0.0"
   },
   "dependencies": {
-    "next": "^4.1.4",
-    "reason-react": "^0.3.0"
+    "next": "^6.0.3",
+    "reason-react": "^0.4.1"
   }
 }
