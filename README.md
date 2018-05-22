@@ -1,14 +1,14 @@
 # bs-next
 
 [Reason](https://reasonml.github.io) bindings for
-[Next.js](https://github.com/zeit/next.js) 4.
+[Next.js](https://github.com/zeit/next.js) v6.
 
 ## API
 
 Bindings are provided for the only two components provided by Next.js:
 
-* [`Next.Head`](https://github.com/zeit/next.js/tree/4.1.4#populating-head)
-* [`Next.Link`](https://github.com/zeit/next.js/tree/4.1.4#with-link)
+* [`Next.Head`](https://github.com/zeit/next.js/tree/6.0.3#populating-head)
+* [`Next.Link`](https://github.com/zeit/next.js/tree/6.0.3#with-link)
 
 ## Example
 
